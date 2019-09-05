@@ -21,4 +21,6 @@ export class Automation {
         if (typeof(destination) === typeof("")) destination = this.state(destination);
         origin.transition(alphabet, destination, direction, action);
     }
+
+    check(word, state = this.initialState) {}
 }
