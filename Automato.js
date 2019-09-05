@@ -5,8 +5,8 @@ export class Automation {
         this.states = [];
         this.initialState = undefined;
     }
-    set state (id, final = false) {
-        this.state.push(new State(id, final));
+    set state (id, final = false, action = undefined) {
+        this.state.push(new State(id, final, action));
     }
 
     get state (id) {

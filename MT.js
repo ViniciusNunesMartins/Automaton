@@ -13,7 +13,8 @@ export class MT extends Automation {
         this.stateReject = state;
     }
     
-    check(word, state = this.initialState, index) {
+    check(word, state = this.initialState, index = 0) {
+        if (index < 0) index = 0;
         if (state === this.stateAccept) return true;
         if (state === this.stateReject) return false;
         for (let t in state.transitions) {
