@@ -1,4 +1,4 @@
-import { Automation } from './Automato';
+import { Automation } from './Automaton';
 
 export class MT extends Automation {
     set stateAccept (state) {

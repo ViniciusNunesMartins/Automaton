@@ -1,4 +1,4 @@
-import { Automation } from './Automato';
+import { Automation } from './Automaton';
 
 export class AFD extends Automation {
     set transition (origin, alphabet, destination, direction = undefined, action = undefined) {
