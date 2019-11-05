@@ -1,4 +1,4 @@
-var MT = () => Automation.call(this);
+export var MT = () => MT.prototype = Object.create(Automation.prototype);
 
 MT.prototype.setStateAccept = (state) => {
     if (typeof(state) === typeof(""))

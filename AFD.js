@@ -1,4 +1,5 @@
-var AFD = () => Automation.call(this);
+AFD = () => AFD.prototype = Object.create(Automation.prototype);
+
 
 AFD.prototype.setTransition = (origin, alphabet, destination, direction = undefined, action = undefined) => {
     if (typeof(origin) === typeof(''))
